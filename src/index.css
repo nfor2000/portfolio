@@ -128,15 +128,14 @@ ul {
 .grid {
      display: grid;
      grid-template-columns: 1fr 1fr ;
-     column-gap: 2rem
-     ;
+     column-gap: 2rem;
 }
 
 header {
      position: fixed;
      width: 100%;
      padding: 20px 0;
-     z-index: 1000;
+     z-index: 999;
      top: 0;
 }
 
@@ -973,13 +972,13 @@ textarea:focus {
 /* ==================== alert-box ==================== */
 .alert-error,
 .alert-success{
-     position: absolute;
+     position: fixed;
      top: 1rem;
      right: 0;
      padding: 1rem;
      background-color: #ececca;
      animation: animate 0.5s linear ;
-     max-width: 345px;
+     max-width: 360px;
      z-index: 1000;
 }
 .alert-error::before{
