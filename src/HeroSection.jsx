@@ -1,3 +1,6 @@
+import me from '../public/me.jpg'
+
+
 function HeroSection() {
      return (
           <section className="hero section" id="hero">
@@ -26,7 +29,7 @@ function HeroSection() {
                          </a>
                     </div>
                     <div class="hero-img">
-                         <img src="./src/assets/me.jpg" alt="" className="img-fluid" />
+                         <img src={me} alt="" className="img-fluid" />
                     </div>
                </div>
           </section>

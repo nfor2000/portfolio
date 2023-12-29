@@ -1,4 +1,5 @@
 import React from 'react'
+import me from '../public/me.jpg'
 
 const About = () => {
      return (
@@ -7,7 +8,7 @@ const About = () => {
 
                <div class="about-container container grid">
                     <div class="about-img">
-                         <img src="./src/assets/me.jpg" alt="" class="img-fluid" />
+                    <img src={me} alt="" class="img-fluid" />
                     </div>
                     <div class="about-content">
                          <h1>I make a professional Websites</h1>
