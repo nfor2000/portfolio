@@ -8,7 +8,7 @@ function HeroSection() {
                     <div className="hero-content">
                          <h4>Hi there,</h4>
                          <h1>I'm <span className="typed" data-typed-items="Nfor Presly Takop ,A Full Stack Developer "> </span></h1>
-                         <p>I'm Full Stack Web Developer  based in Buea, and I'm very passionate and dedicated</p>
+                         <p>I'm a Full Stack Web Developer  based in Buea, and I'm very passionate and dedicated</p>
                          <div className="hero-social">
                               <a href="#">
                                    <i className="fa fa-dribbble"></i>
