@@ -983,10 +983,13 @@ textarea:focus {
      z-index: 1000;
      font-size: 14px;
      transform: translateX(100%);
+     display: none;
 }
 .alert-error.animate,
 .alert-success.animate {
+     display: block;
      animation: animate 0.5s linear ;
+     transform: translateX(0);
 }
 
 .alert-error::before{
