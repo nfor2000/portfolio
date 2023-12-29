@@ -7,6 +7,7 @@ import Contact from './Contact'
 import Projects from './Projects'
 import Services from './Services'
 import Footer from './Footer'
+import Alert from './Alert'
 
 function App() {
      const [message, setMessage] = useState('')
@@ -121,10 +122,17 @@ function App() {
                     })
                })
           })
+
+          const closeAlert = document.querySelector('.close-alert');
+
+          closeAlert.addEventListener('click', (e)=> {
+               e.target.parentElement.style.display = "none";
+          })
      }, [])
 
      return (
           <>
+               {message? <Alert message={message} />: ""}
                <Header />
                <HeroSection />
                <About />

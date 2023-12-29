@@ -969,3 +969,49 @@ textarea:focus {
      font-size: 18px;
      padding: 20px 0;
 }
+
+/* ==================== alert-box ==================== */
+.alert-error,
+.alert-success{
+     position: absolute;
+     top: 1rem;
+     right: 0;
+     padding: 1rem;
+     background-color: #ececca;
+     animation: animate 0.5s linear ;
+}
+.alert-error::before{
+     content: "";
+     position: absolute;
+     width: 10px;
+     left: -10px;
+     top: 0;
+     background-color: tomato;
+     height: 100%;
+}
+
+.alert-success::before{
+     content: "";
+     position: absolute;
+     width: 10px;
+     left: -10px;
+     top: 0;
+     background-color: green;
+     height: 100%;
+}
+@keyframes animate {
+     from{
+          transform: translateX(100%);
+     }
+     to{
+          transform: translateX(0);
+     }
+}
+
+.close-alert {
+     font-size: 28px;
+     position: absolute;
+     right: 1rem;
+     top: 50%;
+     transform: translateY(-50%);
+}
