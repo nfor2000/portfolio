@@ -127,7 +127,7 @@ function App() {
           if(message){
                closeAlert.addEventListener('click', (e)=> {
                     console.log(e.currentTarget);
-                    e.target.parentElement.style.display = "none";
+                    e.target.parentElement.classList.remove('animete');
                })
           }
      }, [message])
