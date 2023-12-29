@@ -979,6 +979,8 @@ textarea:focus {
      padding: 1rem;
      background-color: #ececca;
      animation: animate 0.5s linear ;
+     max-width: 345px;
+     z-index: 1000;
 }
 .alert-error::before{
      content: "";
