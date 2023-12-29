@@ -124,13 +124,13 @@ function App() {
           })
 
           const closeAlert = document.querySelector('.close-alert');
-          if(closeAlert){
+          if(message){
                closeAlert.addEventListener('click', (e)=> {
                     console.log(e.currentTarget);
                     e.target.parentElement.style.display = "none";
                })
           }
-     }, [])
+     }, [message])
 
      return (
           <>
