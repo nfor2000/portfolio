@@ -58,7 +58,7 @@ const Contact = ({setMessage}) => {
             />
             <input
               required
-              type="text"
+              type="email"
               placeholder='Email'
               name="email"
               value={email}
