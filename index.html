@@ -1,16 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <link rel="stylesheet" href="./src/assets/font-awesome-4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="./src/type.js"></script>
-  </body>
+
+<head>
+     <meta charset="UTF-8" />
+     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Vite + React</title>
+     <link rel="stylesheet" href="./src/assets/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+     <div id="root"></div>
+     <script type="module" src="/src/main.jsx"></script>
+     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     <script>
+          /* Hero type effect */
+          const typed = document.querySelector('.typed');
+
+          if (typed) {
+               let typed_strings = typed.getAttribute('data-typed-items');
+               typed_strings = typed_strings.split(',');
+               new Typed('.typed', {
+                    strings: typed_strings,
+                    loop: true,
+                    typeSpeed: 100,
+                    backSpeed: 50,
+                    backDelay: 2000
+               })
+          }
+
+     </script>
+</body>
+
 </html>
