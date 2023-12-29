@@ -23,7 +23,7 @@ const Contact = ({setMessage}) => {
    
      console.log(formData);
      try {
-       const response = await axios.post("http://localhost:8000/sendMail", formData, {
+       const response = await axios.post("hhttps://portfolio-server-one-sigma.vercel.app/sendMail", formData, {
          headers: {
            "Content-Type": "application/json"
          }
