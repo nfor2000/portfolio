@@ -1,0 +1,8 @@
+POST http://localhost:8000/
+Content-Type: application/json
+
+{
+     "email":"example@gmail.com",
+     "subject":"portfolio",
+     "message":"Hello nice to meet you"
+}
