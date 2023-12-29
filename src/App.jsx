@@ -126,6 +126,7 @@ function App() {
           const closeAlert = document.querySelector('.close-alert');
           if(closeAlert){
                closeAlert.addEventListener('click', (e)=> {
+                    console.log(e.currentTarget);
                     e.target.parentElement.style.display = "none";
                })
           }

@@ -980,6 +980,7 @@ textarea:focus {
      animation: animate 0.5s linear ;
      max-width: 360px;
      z-index: 1000;
+     font-size: 15px;
 }
 .alert-error::before{
      content: "";
@@ -1010,9 +1011,9 @@ textarea:focus {
 }
 
 .close-alert {
-     font-size: 28px;
+     font-size: 20px;
      position: absolute;
-     right: 1rem;
+     right: .5rem;
      top: 50%;
      transform: translateY(-50%);
 }
