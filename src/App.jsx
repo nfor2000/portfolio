@@ -124,10 +124,11 @@ function App() {
           })
 
           const closeAlert = document.querySelector('.close-alert');
-
-          closeAlert.addEventListener('click', (e)=> {
-               e.target.parentElement.style.display = "none";
-          })
+          if(closeAlert){
+               closeAlert.addEventListener('click', (e)=> {
+                    e.target.parentElement.style.display = "none";
+               })
+          }
      }, [])
 
      return (
