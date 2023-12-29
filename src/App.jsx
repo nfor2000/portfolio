@@ -128,9 +128,10 @@ function App() {
                closeAlert.addEventListener('click', (e)=> {
                     console.log(e.currentTarget);
                     e.target.parentElement.classList.remove('animate');
+                    setMessage('');
                })
           }
-     }, [message])
+     }, [message, setMessage])
 
      return (
           <>
