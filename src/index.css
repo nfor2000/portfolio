@@ -909,6 +909,7 @@ textarea:focus {
      align-items: center;
      justify-content: center;
      column-gap: 10px;
+     cursor: pointer;
 }
 
 @media screen and (max-width: 567px) {
@@ -981,6 +982,7 @@ textarea:focus {
      width: 345px;
      z-index: 1000;
      font-size: 14px;
+     transform: translateX(100%);
 }
 .alert-error.animate,
 .alert-success.animate {
@@ -1021,4 +1023,5 @@ textarea:focus {
      right: .5rem;
      top: 50%;
      transform: translateY(-50%);
+     cursor: pointer;
 }
