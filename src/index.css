@@ -263,6 +263,8 @@ header .container {
      }
 }
 
+
+
 /* ========== Hero Section ============= */
 
 .hero {
@@ -336,6 +338,8 @@ header .container {
      border-radius: 50%;
 }
 
+
+
 @media screen and (max-width: 768px) {
      
      .hero-content h4{
@@ -351,7 +355,7 @@ header .container {
      }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 820px) {
      
      .hero-container {
           grid-template-columns: 1fr;
@@ -369,6 +373,13 @@ header .container {
      .hero-img {
           text-align: center;
      }
+}
+
+@media screen and (max-width: 420px) {
+     
+    .hero-content h1 {
+          font-size: 20px ;
+    }
 }
 
 /* ========== About Section ============= */
