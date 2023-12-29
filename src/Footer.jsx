@@ -18,7 +18,7 @@ const Footer = () => {
                                    </a>
                               </div>
                               <h3>webGenie</h3>
-                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate in asperiores dolorum nulla, neque temporibus iste, delectus aliquid sint blanditiis qui laboriosam error illo, quas ut vel officiis sed esse.</p>
+                              <p>I professionally crafted websites to enhance your online presence and drive business growth.</p>
                          </div>
                          <div className="footer-copy">&copy; webGenie. All rights reserved</div>
                     </div>

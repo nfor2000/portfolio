@@ -12,7 +12,7 @@ const About = () => {
                     </div>
                     <div class="about-content">
                          <h1>I make a professional Websites</h1>
-                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit eveniet, commodi voluptate, voluptatem doloremque dolores corporis totam quo quos fugiat odio blanditiis officia accusamus provident mollitia ab explicabo ipsam aperiam exercitationem earum! Architecto totam est provident dolorem eum dicta ad?</p>
+                         <p>Welcome to webGenie, where I specialize in creating professional websites tailored to meet your unique business needs. We are passionate about crafting visually stunning and highly functional websites that enhance your online presence and drive business growth.</p>
                          <div class="about-info">
                               <div>
                                    <span class="number">20</span>
