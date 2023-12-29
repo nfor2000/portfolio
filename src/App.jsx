@@ -41,7 +41,20 @@ function App() {
 
           window.addEventListener('scroll', scrollHeader);
 
-         
+          /* Hero type effect */
+          const typed = document.querySelector('.typed');
+
+          if (typed) {
+               let typed_strings = typed.getAttribute('data-typed-items');
+               typed_strings = typed_strings.split(',');
+               new Typed('.typed', {
+                    strings: typed_strings,
+                    loop: true,
+                    typeSpeed: 100,
+                    backSpeed: 50,
+                    backDelay: 2000
+               })
+          }
           // Scroll sections active Link
 
           const sections = document.querySelectorAll('section[id]');
@@ -88,21 +101,21 @@ function App() {
           window.addEventListener("scroll", resumeActive);
 
           const modalBtns = document.querySelectorAll('.services-button'),
-                modalViews = document.querySelectorAll('.services-modal'),
-                modalClose = document.querySelectorAll('.modal-close-icon');
+               modalViews = document.querySelectorAll('.services-modal'),
+               modalClose = document.querySelectorAll('.modal-close-icon');
 
-          const modal = function(modalClick) {
+          const modal = function (modalClick) {
                modalViews[modalClick].classList.add('active-modal');
           }
 
-          modalBtns.forEach((modalBtn,i) => {
+          modalBtns.forEach((modalBtn, i) => {
                modalBtn.addEventListener("click", () => {
                     modal(i)
                })
           })
 
           modalClose.forEach(close => {
-               close.addEventListener("click", ()=> {
+               close.addEventListener("click", () => {
                     modalViews.forEach(modalView => {
                          modalView.classList.remove('active-modal');
                     })
@@ -110,8 +123,8 @@ function App() {
           })
 
           const closeAlert = document.querySelector('.close-alert');
-          if(message){
-               closeAlert.addEventListener('click', (e)=> {
+          if (message) {
+               closeAlert.addEventListener('click', (e) => {
                     console.log(e.currentTarget);
                     e.target.parentElement.classList.remove('animate');
                     setMessage('');
@@ -121,7 +134,7 @@ function App() {
 
      return (
           <>
-               {message? <Alert message={message} />: ""}
+               {message ? <Alert message={message} /> : ""}
                <Header />
                <HeroSection />
                <About />
